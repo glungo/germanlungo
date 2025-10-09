@@ -1,0 +1,19 @@
+{
+  "name": "germanlungo-portfolio",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "build": "next build"
+  },
+  "dependencies": {
+    "lucide-react": "^0.475.0",
+    "next": "15.5.4",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "24.7.1",
+    "@types/react": "19.2.2",
+    "typescript": "^5.9.3"
+  }
+}
