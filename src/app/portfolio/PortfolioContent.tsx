@@ -19,9 +19,14 @@ import Batovi1 from "../../../public/assets/Batovi.png"
 import Batovi2 from "../../../public/assets/Batovi2.jpg"
 import Batovi4 from "../../../public/assets/Batovi4.png"
 
+const largeImageWrapper =
+  "bg-white p-2 rounded-xl shadow-lg w-[600px] h-[336px] print:w-[240px] print:h-[134px]"
+const mediumImageWrapper =
+  "bg-white p-2 rounded-xl shadow-lg w-[480px] h-[272px] print:w-[200px] print:h-[120px]"
+
 export default function PortfolioContent() {
   return (
-    <div className="max-w-[210mm] mx-auto p-4 bg-white text-gray-800 print:p-2 print:max-w-none print:mx-0">
+    <div className="max-w-[420mm] mx-auto p-8 bg-white text-gray-800 space-y-12 print:p-2 print:max-w-none print:mx-0">
       <style jsx global>{`
         @media print {
           * {
@@ -59,7 +64,7 @@ export default function PortfolioContent() {
 
         {/* Rocket League */}
         <section className="mb-8 print:mb-4 print:break-inside-avoid">
-          <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-4 rounded-lg shadow-md print:shadow-none print:p-2">
+          <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl shadow-xl print:shadow-none print:p-2">
             <div className="text-center mb-4 print:mb-2">
               <h2 className="text-2xl font-bold mb-2 print:text-lg print:mb-1">Technical Lead - Rocket League</h2>
               <div className="flex justify-center items-center gap-4 text-sm text-gray-600 mb-3 print:gap-2 print:mb-1 print:text-xs">
@@ -74,31 +79,31 @@ export default function PortfolioContent() {
               </div>
             </div>
             
-            <div className="flex justify-center gap-2 mb-4 print:gap-1 print:mb-2">
-              <div className="bg-white p-1 rounded shadow-sm w-32 h-20 print:w-24 print:h-16">
+            <div className="flex flex-wrap justify-center gap-6 mb-6 print:gap-2 print:mb-2">
+              <div className={largeImageWrapper}>
                 <Image 
                   src={RL1}
                   alt="Rocket League gameplay screenshot 1"
-                  width={150}
-                  height={84}
+                  width={600}
+                  height={336}
                   className="rounded object-cover w-full h-full"
                 />
               </div>
-              <div className="bg-white p-1 rounded shadow-sm w-32 h-20 print:w-24 print:h-16">
+              <div className={largeImageWrapper}>
                 <Image 
                   src={RL2}
                   alt="Rocket League gameplay screenshot 2"
-                  width={150}
-                  height={84}
+                  width={600}
+                  height={336}
                   className="rounded object-cover w-full h-full"
                 />
               </div>
-              <div className="bg-white p-1 rounded shadow-sm w-32 h-20 print:w-24 print:h-16">
+              <div className={largeImageWrapper}>
                 <Image 
                   src={RL3}
                   alt="Rocket League gameplay screenshot 3"
-                  width={150}
-                  height={84}
+                  width={600}
+                  height={336}
                   className="rounded object-cover w-full h-full"
                 />
               </div>
@@ -124,10 +129,10 @@ export default function PortfolioContent() {
 
         {/* Synthesis School */}
         <section className="mb-8 print:mb-4 print:break-inside-avoid">
-          <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-4 rounded-lg shadow-md print:shadow-none print:p-2">
-            <div className="text-center mb-4 print:mb-2">
-              <h2 className="text-2xl font-bold mb-2 print:text-lg print:mb-1">Lead Game Developer - Synthesis School</h2>
-              <div className="flex justify-center items-center gap-4 text-sm text-gray-600 mb-3 print:gap-2 print:mb-1 print:text-xs">
+          <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl shadow-xl print:shadow-none print:p-2">
+            <div className="text-center mb-6 print:mb-2">
+              <h2 className="text-3xl font-bold mb-2 print:text-lg print:mb-1">Lead Game Developer - Synthesis School</h2>
+              <div className="flex justify-center items-center gap-6 text-base text-gray-600 mb-4 print:gap-2 print:mb-1 print:text-xs">
                 <span className="flex items-center gap-1">
                   <Calendar className="h-3 w-3" />
                   2023 - 2024
@@ -135,31 +140,31 @@ export default function PortfolioContent() {
               </div>
             </div>
             
-            <div className="flex justify-center gap-2 mb-4 print:gap-1 print:mb-2">
-              <div className="bg-white p-1 rounded shadow-sm w-32 h-20 print:w-24 print:h-16">
+            <div className="flex flex-wrap justify-center gap-6 mb-6 print:gap-2 print:mb-2">
+              <div className={largeImageWrapper}>
                 <Image 
                   src={Synth1}
                   alt="Synthesis educational minigames interface 1"
-                  width={150}
-                  height={84}
+                  width={600}
+                  height={336}
                   className="rounded object-cover w-full h-full"
                 />
               </div>
-              <div className="bg-white p-1 rounded shadow-sm w-32 h-20 print:w-24 print:h-16">
+              <div className={largeImageWrapper}>
                 <Image 
                   src={Synth2}
                   alt="Synthesis educational minigames interface 2"
-                  width={150}
-                  height={84}
+                  width={600}
+                  height={336}
                   className="rounded object-cover w-full h-full"
                 />
               </div>
-              <div className="bg-white p-1 rounded shadow-sm w-32 h-20 print:w-24 print:h-16">
+              <div className={largeImageWrapper}>
                 <Image 
                   src={Synth3}
                   alt="Synthesis educational minigames interface 3"
-                  width={150}
-                  height={84}
+                  width={600}
+                  height={336}
                   className="rounded object-cover w-full h-full"
                 />
               </div>
@@ -185,10 +190,10 @@ export default function PortfolioContent() {
 
         {/* The Sandbox */}
         <section className="mb-8 print:mb-4 print:break-inside-avoid">
-          <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-4 rounded-lg shadow-md print:shadow-none print:p-2">
-            <div className="text-center mb-4 print:mb-2">
-              <h2 className="text-2xl font-bold mb-2 print:text-lg print:mb-1">Senior Game Developer - The Sandbox</h2>
-              <div className="flex justify-center items-center gap-4 text-sm text-gray-600 mb-3 print:gap-2 print:mb-1 print:text-xs">
+          <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-2xl shadow-xl print:shadow-none print:p-2">
+            <div className="text-center mb-6 print:mb-2">
+              <h2 className="text-3xl font-bold mb-2 print:text-lg print:mb-1">Senior Game Developer - The Sandbox</h2>
+              <div className="flex justify-center items-center gap-6 text-base text-gray-600 mb-4 print:gap-2 print:mb-1 print:text-xs">
                 <span className="flex items-center gap-1">
                   <Calendar className="h-3 w-3" />
                   2022 - 2023
@@ -196,22 +201,22 @@ export default function PortfolioContent() {
               </div>
             </div>
             
-            <div className="flex justify-center gap-2 mb-4 print:gap-1 print:mb-2">
-              <div className="bg-white p-1 rounded shadow-sm w-32 h-20 print:w-24 print:h-16">
+            <div className="flex flex-wrap justify-center gap-6 mb-6 print:gap-2 print:mb-2">
+              <div className={largeImageWrapper}>
                 <Image 
                   src={Sandbox1}
                   alt="The Sandbox game development tools 1"
-                  width={150}
-                  height={84}
+                  width={600}
+                  height={336}
                   className="rounded object-cover w-full h-full"
                 />
               </div>
-              <div className="bg-white p-1 rounded shadow-sm w-32 h-20 print:w-24 print:h-16">
+              <div className={largeImageWrapper}>
                 <Image 
                   src={Sandbox2}
                   alt="The Sandbox game development tools 2"
-                  width={150}
-                  height={84}
+                  width={600}
+                  height={336}
                   className="rounded object-cover w-full h-full"
                 />
               </div>
@@ -237,10 +242,10 @@ export default function PortfolioContent() {
 
         {/* Ironhide Games */}
         <section className="mb-8 print:mb-4 print:break-inside-avoid">
-          <div className="bg-gradient-to-br from-orange-50 to-red-50 p-4 rounded-lg shadow-md print:shadow-none print:p-2">
-            <div className="text-center mb-4 print:mb-2">
-              <h2 className="text-2xl font-bold mb-2 print:text-lg print:mb-1">Senior Game Developer - Ironhide Games</h2>
-              <div className="flex justify-center items-center gap-4 text-sm text-gray-600 mb-3 print:gap-2 print:mb-1 print:text-xs">
+          <div className="bg-gradient-to-br from-orange-50 to-red-50 p-8 rounded-2xl shadow-xl print:shadow-none print:p-2">
+            <div className="text-center mb-6 print:mb-2">
+              <h2 className="text-3xl font-bold mb-2 print:text-lg print:mb-1">Senior Game Developer - Ironhide Games</h2>
+              <div className="flex justify-center items-center gap-6 text-base text-gray-600 mb-4 print:gap-2 print:mb-1 print:text-xs">
                 <span className="flex items-center gap-1">
                   <Calendar className="h-3 w-3" />
                   2020 - 2022
@@ -248,22 +253,22 @@ export default function PortfolioContent() {
               </div>
             </div>
             
-            <div className="flex justify-center gap-2 mb-4 print:gap-1 print:mb-2">
-              <div className="bg-white p-1 rounded shadow-sm w-32 h-20 print:w-24 print:h-16">
+            <div className="flex flex-wrap justify-center gap-6 mb-6 print:gap-2 print:mb-2">
+              <div className={largeImageWrapper}>
                 <Image 
                   src={Junkworld1}
                   alt="Junkworld game screenshot 1"
-                  width={150}
-                  height={84}
+                  width={600}
+                  height={336}
                   className="rounded object-cover w-full h-full"
                 />
               </div>
-              <div className="bg-white p-1 rounded shadow-sm w-32 h-20 print:w-24 print:h-16">
+              <div className={largeImageWrapper}>
                 <Image 
                   src={Junkworld2}
                   alt="Junkworld game screenshot 2"
-                  width={150}
-                  height={84}
+                  width={600}
+                  height={336}
                   className="rounded object-cover w-full h-full"
                 />
               </div>
@@ -289,10 +294,10 @@ export default function PortfolioContent() {
 
         {/* Globant */}
         <section className="mb-8 print:mb-4 print:break-inside-avoid">
-          <div className="bg-gradient-to-br from-yellow-50 to-amber-50 p-4 rounded-lg shadow-md print:shadow-none print:p-2">
-            <div className="text-center mb-4 print:mb-2">
-              <h2 className="text-2xl font-bold mb-2 print:text-lg print:mb-1">Semi-Senior Game Developer - Globant</h2>
-              <div className="flex justify-center items-center gap-4 text-sm text-gray-600 mb-3 print:gap-2 print:mb-1 print:text-xs">
+          <div className="bg-gradient-to-br from-yellow-50 to-amber-50 p-8 rounded-2xl shadow-xl print:shadow-none print:p-2">
+            <div className="text-center mb-6 print:mb-2">
+              <h2 className="text-3xl font-bold mb-2 print:text-lg print:mb-1">Semi-Senior Game Developer - Globant</h2>
+              <div className="flex justify-center items-center gap-6 text-base text-gray-600 mb-4 print:gap-2 print:mb-1 print:text-xs">
                 <span className="flex items-center gap-1">
                   <Calendar className="h-3 w-3" />
                   2018 - 2020
@@ -300,22 +305,22 @@ export default function PortfolioContent() {
               </div>
             </div>
             
-            <div className="flex justify-center gap-2 mb-4 print:gap-1 print:mb-2">
-              <div className="bg-white p-1 rounded shadow-sm w-32 h-20 print:w-24 print:h-16">
+            <div className="flex flex-wrap justify-center gap-6 mb-6 print:gap-2 print:mb-2">
+              <div className={largeImageWrapper}>
                 <Image 
                   src={NBA1}
                   alt="NBA EA SPORTS project screenshot 1"
-                  width={150}
-                  height={84}
+                  width={600}
+                  height={336}
                   className="rounded object-cover w-full h-full"
                 />
               </div>
-              <div className="bg-white p-1 rounded shadow-sm w-32 h-20 print:w-24 print:h-16">
+              <div className={largeImageWrapper}>
                 <Image 
                   src={NBA2}
                   alt="NBA EA SPORTS project screenshot 2"
-                  width={150}
-                  height={84}
+                  width={600}
+                  height={336}
                   className="rounded object-cover w-full h-full"
                 />
               </div>
@@ -339,10 +344,10 @@ export default function PortfolioContent() {
 
         {/* Batovi Games */}
         <section className="mb-8 print:mb-4 print:break-inside-avoid">
-          <div className="bg-gradient-to-br from-cyan-50 to-blue-50 p-4 rounded-lg shadow-md print:shadow-none print:p-2">
-            <div className="text-center mb-4 print:mb-2">
-              <h2 className="text-2xl font-bold mb-2 print:text-lg print:mb-1">Game Developer - Batovi Games</h2>
-              <div className="flex justify-center items-center gap-4 text-sm text-gray-600 mb-3 print:gap-2 print:mb-1 print:text-xs">
+          <div className="bg-gradient-to-br from-cyan-50 to-blue-50 p-8 rounded-2xl shadow-xl print:shadow-none print:p-2">
+            <div className="text-center mb-6 print:mb-2">
+              <h2 className="text-3xl font-bold mb-2 print:text-lg print:mb-1">Game Developer - Batovi Games</h2>
+              <div className="flex justify-center items-center gap-6 text-base text-gray-600 mb-4 print:gap-2 print:mb-1 print:text-xs">
                 <span className="flex items-center gap-1">
                   <Calendar className="h-3 w-3" />
                   2016 - 2018
@@ -350,31 +355,31 @@ export default function PortfolioContent() {
               </div>
             </div>
             
-            <div className="flex justify-center gap-2 mb-4 print:gap-1 print:mb-2">
-              <div className="bg-white p-1 rounded shadow-sm w-28 h-18 print:w-20 print:h-14">
+            <div className="flex flex-wrap justify-center gap-6 mb-6 print:gap-2 print:mb-2">
+              <div className={mediumImageWrapper}>
                 <Image 
                   src={Batovi1}
                   alt="Batovi Games project screenshot 1"
-                  width={120}
-                  height={68}
+                  width={480}
+                  height={272}
                   className="rounded object-cover w-full h-full"
                 />
               </div>
-              <div className="bg-white p-1 rounded shadow-sm w-28 h-18 print:w-20 print:h-14">
+              <div className={mediumImageWrapper}>
                 <Image 
                   src={Batovi2}
                   alt="Batovi Games project screenshot 2"
-                  width={120}
-                  height={68}
+                  width={480}
+                  height={272}
                   className="rounded object-cover w-full h-full"
                 />
               </div>
-              <div className="bg-white p-1 rounded shadow-sm w-28 h-18 print:w-20 print:h-14">
+              <div className={mediumImageWrapper}>
                 <Image 
                   src={Batovi4}
                   alt="Batovi Games project screenshot 4"
-                  width={120}
-                  height={68}
+                  width={480}
+                  height={272}
                   className="rounded object-cover w-full h-full"
                 />
               </div>
