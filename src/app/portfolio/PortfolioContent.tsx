@@ -3,6 +3,8 @@
 import { Calendar, Users } from "lucide-react"
 import Image from "next/image"
 
+const assetBase = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/assets`
+
 export default function PortfolioContent() {
   return (
     <div className="max-w-[210mm] mx-auto p-4 bg-white text-gray-800 print:p-2 print:max-w-none print:mx-0">
@@ -61,7 +63,7 @@ export default function PortfolioContent() {
             <div className="flex justify-center gap-2 mb-4 print:gap-1 print:mb-2">
               <div className="bg-white p-1 rounded shadow-sm w-32 h-20 print:w-24 print:h-16">
                 <Image 
-                  src="/assets/RL1.webp" 
+                  src={`${assetBase}/RL1.webp`}
                   alt="Rocket League gameplay screenshot 1"
                   width={150}
                   height={84}
@@ -70,7 +72,7 @@ export default function PortfolioContent() {
               </div>
               <div className="bg-white p-1 rounded shadow-sm w-32 h-20 print:w-24 print:h-16">
                 <Image 
-                  src="/assets/RL2.webp" 
+                  src={`${assetBase}/RL2.webp`}
                   alt="Rocket League gameplay screenshot 2"
                   width={150}
                   height={84}
@@ -79,7 +81,7 @@ export default function PortfolioContent() {
               </div>
               <div className="bg-white p-1 rounded shadow-sm w-32 h-20 print:w-24 print:h-16">
                 <Image 
-                  src="/assets/RL3.jpg" 
+                  src={`${assetBase}/RL3.jpg`}
                   alt="Rocket League gameplay screenshot 3"
                   width={150}
                   height={84}
@@ -122,7 +124,7 @@ export default function PortfolioContent() {
             <div className="flex justify-center gap-2 mb-4 print:gap-1 print:mb-2">
               <div className="bg-white p-1 rounded shadow-sm w-32 h-20 print:w-24 print:h-16">
                 <Image 
-                  src="/assets/Synth.png" 
+                  src={`${assetBase}/Synth.png`}
                   alt="Synthesis educational minigames interface 1"
                   width={150}
                   height={84}
@@ -131,7 +133,7 @@ export default function PortfolioContent() {
               </div>
               <div className="bg-white p-1 rounded shadow-sm w-32 h-20 print:w-24 print:h-16">
                 <Image 
-                  src="/assets/Synth2.jpg" 
+                  src={`${assetBase}/Synth2.jpg`}
                   alt="Synthesis educational minigames interface 2"
                   width={150}
                   height={84}
@@ -140,7 +142,7 @@ export default function PortfolioContent() {
               </div>
               <div className="bg-white p-1 rounded shadow-sm w-32 h-20 print:w-24 print:h-16">
                 <Image 
-                  src="/assets/Synth3.jpg" 
+                  src={`${assetBase}/Synth3.jpg`}
                   alt="Synthesis educational minigames interface 3"
                   width={150}
                   height={84}
@@ -183,7 +185,7 @@ export default function PortfolioContent() {
             <div className="flex justify-center gap-2 mb-4 print:gap-1 print:mb-2">
               <div className="bg-white p-1 rounded shadow-sm w-32 h-20 print:w-24 print:h-16">
                 <Image 
-                  src="/assets/Sandbox.jpg" 
+                  src={`${assetBase}/Sandbox.jpg`}
                   alt="The Sandbox game development tools 1"
                   width={150}
                   height={84}
@@ -192,7 +194,7 @@ export default function PortfolioContent() {
               </div>
               <div className="bg-white p-1 rounded shadow-sm w-32 h-20 print:w-24 print:h-16">
                 <Image 
-                  src="/assets/Sandbox2.jpg" 
+                  src={`${assetBase}/Sandbox2.jpg`}
                   alt="The Sandbox game development tools 2"
                   width={150}
                   height={84}
@@ -235,7 +237,7 @@ export default function PortfolioContent() {
             <div className="flex justify-center gap-2 mb-4 print:gap-1 print:mb-2">
               <div className="bg-white p-1 rounded shadow-sm w-32 h-20 print:w-24 print:h-16">
                 <Image 
-                  src="/assets/Junkworld.jpg" 
+                  src={`${assetBase}/Junkworld.jpg`}
                   alt="Junkworld game screenshot 1"
                   width={150}
                   height={84}
@@ -244,7 +246,7 @@ export default function PortfolioContent() {
               </div>
               <div className="bg-white p-1 rounded shadow-sm w-32 h-20 print:w-24 print:h-16">
                 <Image 
-                  src="/assets/Junkworld2.jpg" 
+                  src={`${assetBase}/Junkworld2.jpg`}
                   alt="Junkworld game screenshot 2"
                   width={150}
                   height={84}
@@ -287,7 +289,7 @@ export default function PortfolioContent() {
             <div className="flex justify-center gap-2 mb-4 print:gap-1 print:mb-2">
               <div className="bg-white p-1 rounded shadow-sm w-32 h-20 print:w-24 print:h-16">
                 <Image 
-                  src="/assets/NBA.jpg" 
+                  src={`${assetBase}/NBA.jpg`}
                   alt="NBA EA SPORTS project screenshot 1"
                   width={150}
                   height={84}
@@ -296,7 +298,7 @@ export default function PortfolioContent() {
               </div>
               <div className="bg-white p-1 rounded shadow-sm w-32 h-20 print:w-24 print:h-16">
                 <Image 
-                  src="/assets/NBA2.jpg" 
+                  src={`${assetBase}/NBA2.jpg`}
                   alt="NBA EA SPORTS project screenshot 2"
                   width={150}
                   height={84}
@@ -337,7 +339,7 @@ export default function PortfolioContent() {
             <div className="flex justify-center gap-2 mb-4 print:gap-1 print:mb-2">
               <div className="bg-white p-1 rounded shadow-sm w-28 h-18 print:w-20 print:h-14">
                 <Image 
-                  src="/assets/Batovi.png" 
+                  src={`${assetBase}/Batovi.png`}
                   alt="Batovi Games project screenshot 1"
                   width={120}
                   height={68}
@@ -346,7 +348,7 @@ export default function PortfolioContent() {
               </div>
               <div className="bg-white p-1 rounded shadow-sm w-28 h-18 print:w-20 print:h-14">
                 <Image 
-                  src="/assets/Batovi2.jpg" 
+                  src={`${assetBase}/Batovi2.jpg`}
                   alt="Batovi Games project screenshot 2"
                   width={120}
                   height={68}
@@ -355,7 +357,7 @@ export default function PortfolioContent() {
               </div>
               <div className="bg-white p-1 rounded shadow-sm w-28 h-18 print:w-20 print:h-14">
                 <Image 
-                  src="/assets/Batovi4.png" 
+                  src={`${assetBase}/Batovi4.png`}
                   alt="Batovi Games project screenshot 4"
                   width={120}
                   height={68}

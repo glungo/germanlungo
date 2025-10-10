@@ -19,4 +19,8 @@ if (basePath) {
   nextConfig.assetPrefix = basePath
 }
 
+nextConfig.env = {
+  NEXT_PUBLIC_BASE_PATH: basePath ?? "",
+}
+
 export default nextConfig

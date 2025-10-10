@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin } from "lucide-react"
+import Link from "next/link"
 
 export default function EngineerCV() {
   return (
@@ -7,9 +8,9 @@ export default function EngineerCV() {
         <h1 className="text-2xl font-bold mb-0.5">German Lungo</h1>
         <h2 className="text-lg text-gray-600 mb-1">Senior Game Developer</h2>
         <div className="flex flex-wrap gap-2 text-xs">
-          <a href="/" className="flex items-center gap-1 text-blue-600 hover:underline">
+          <Link href="/" className="flex items-center gap-1 text-blue-600 hover:underline">
             View portfolio
-          </a>
+          </Link>
           <a href="mailto:g.lungo.m@gmail.com" className="flex items-center gap-1">
             <Mail className="h-3 w-3" />
             g.lungo.m@gmail.com
