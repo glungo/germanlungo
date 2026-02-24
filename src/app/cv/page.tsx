@@ -127,7 +127,7 @@ export default function EngineerCV() {
           </ul>
           <p className="text-xs">
             <span className="font-medium">Technologies: </span>
-            <span className="text-gray-600">C++</span>
+            <span className="text-gray-600">C++, Unity</span>
           </p>
         </div>
 
