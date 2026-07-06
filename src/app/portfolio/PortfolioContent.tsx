@@ -58,7 +58,7 @@ export default function PortfolioContent() {
       <div className="print:scale-90">
         <header className="text-center mb-4 print:mb-2">
           <h1 className="text-3xl font-bold mb-1 print:text-2xl print:mb-0">Portfolio - German Lungo</h1>
-          <p className="text-lg text-gray-600 print:text-sm">(2016-2025)</p>
+          <p className="text-lg text-gray-600 print:text-sm">(2016-2026)</p>
           <p className="text-base text-gray-500 mt-1 print:text-xs print:mt-0">Game Development Journey</p>
         </header>
 
