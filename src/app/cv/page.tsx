@@ -49,6 +49,9 @@ export default function EngineerCV() {
             <li>Optimization</li>
             <li>Mentoring</li>
             <li>Live Ops</li>
+            <li>Improved client stability, reducing historic-high crash rate from 10% to under 2%</li>
+            <li>Contributed to raising concurrent players (CCU) from 400K to 1M+</li>
+            <li>Implemented production-ready AI workflows, including spec-driven development, automated bug research, and documentation indexation</li>
           </ul>
           <p className="text-xs">
             <span className="font-medium">Technologies: </span>
